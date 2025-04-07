@@ -1,6 +1,8 @@
 import 'dart:async';
 
 import 'package:get/get.dart';
+import 'package:open_weather/app/services/connective_service.dart';
+import 'package:open_weather/app/services/local_storage.dart';
 import 'package:open_weather/data/models/cities.dart';
 import 'package:open_weather/data/models/current.dart';
 import 'package:open_weather/data/models/daily.dart';
@@ -12,11 +14,13 @@ class WeatherController extends GetxController {
 
   final FetchWeatherUseCase _weatherUseCase;
 
+  final _store = Get.find<LocalStorageService>();
+  final _connective = Get.find<ConnectiveService>();
+
   Current? current(Cities city) => _cityMap.value.containsKey(city) ? _cityMap.value[city]?.current : null;
 
   final hourly = Rx<List<Current>>([]);
   final dailies = Rx<List<Daily>>([]);
-
   final _cityMap = Rx<Map<Cities, OpenWeather?>>({});
 
   @override
@@ -37,9 +41,15 @@ class WeatherController extends GetxController {
   }
 
   FutureOr<void> _fetchCity(Cities city) async {
-    final wrapper = await _weatherUseCase.execute(city.latLng);
+    OpenWeather? wrapper;
 
-    _cityMap.value = {..._cityMap.value, city: wrapper};
+    if (_connective.hasConnection) {
+      wrapper = await _weatherUseCase.execute(city.latLng);
+
+      await _store.storeWeather(city, wrapper);
+    }
+
+    _cityMap.value = {..._cityMap.value, city: wrapper ??= _store.fetchWeather(city)};
   }
 
   void selectCity(Cities city) {

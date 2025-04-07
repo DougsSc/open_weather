@@ -20,7 +20,7 @@ class Daily {
   }
 
   Map<String, dynamic> toJson() => {
-    "dt": dt,
+    "dt": DateUtilities.toInt(dt),
     "summary": summary,
     "temp": temp?.toJson(),
     "weather": weather.map((x) => x.toJson()).toList(),

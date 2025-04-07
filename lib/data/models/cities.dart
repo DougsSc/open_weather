@@ -5,8 +5,8 @@ enum Cities {
   sanFrancisco('San Francisco / CA', LatLng(37.77338020005381, -122.41950030491161)),
   urubici('Urubici / SC', LatLng(-28.014876477645924, -49.594066950649975));
 
-  final String name;
+  final String label;
   final LatLng latLng;
 
-  const Cities(this.name, this.latLng);
+  const Cities(this.label, this.latLng);
 }

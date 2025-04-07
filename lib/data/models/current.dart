@@ -27,7 +27,7 @@ class Current {
   }
 
   Map<String, dynamic> toJson() => {
-    "dt": dt,
+    "dt": DateUtilities.toInt(dt),
     "temp": temp,
     "pressure": pressure,
     "humidity": humidity,

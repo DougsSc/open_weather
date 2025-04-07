@@ -71,7 +71,7 @@ class _CityCard extends GetView<WeatherController> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              BaseLabel(city.name, color: Colors.white, fontWeight: AppTextStyles.fwExtraBold),
+              BaseLabel(city.label, color: Colors.white, fontWeight: AppTextStyles.fwExtraBold),
               Spacer(),
               BaseLabel('$temp° C', color: Colors.white, fontWeight: AppTextStyles.fwExtraBold, fontSize: 42),
               Spacer(),
