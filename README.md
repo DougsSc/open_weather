@@ -53,7 +53,7 @@ The app is composed using Clean Architecture.
    ```sh
    flutter pub get
    ```
-5. Navigate to [app_consts](lib/app/config/app_consts.dart) and paste your API key to the apiKey variable
+5. Navigate to [app_consts](lib/app/config/app_consts.dart) and paste your API key to the "appid" variable
    ```dart
    String appid = 'Paste Your API Key Here';
    ```
