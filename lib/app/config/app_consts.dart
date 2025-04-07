@@ -1,5 +1,5 @@
 class AppConsts {
   AppConsts._();
 
-  static const appid = '';
+  static const appid = 'Paste Your API Key Here';
 }

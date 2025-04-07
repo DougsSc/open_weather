@@ -125,7 +125,13 @@ class _HourlyView extends GetView<WeatherController> {
                       children: [
                         if (current.dt != null)
                           BaseLabel(
-                            isNow ? 'Now' : DateFormat.j().format(current.dt!).toLowerCase().removeAllWhitespace,
+                            isNow
+                                ? 'Now'
+                                : DateFormat.j()
+                                    .format(current.dt!)
+                                    .toLowerCase()
+                                    .replaceAll(' ', '')
+                                    .removeAllWhitespace,
                             fontSize: AppTextStyles.fsSmall,
                             color: isNow ? AppTheme.selectedColor : AppTheme.gray500,
                           ),
