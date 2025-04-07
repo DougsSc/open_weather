@@ -2,7 +2,7 @@
 
 A simple weather App created using [Flutter](https://flutter.dev/) and [Dart](https://dart.dev/) and using API from [OpenWeatherMap](https://openweathermap.org/api)</br>
 
-**This project was a mobile challenge for [ProjectMark](https://www.projectmark.com/). Following the [Google Doc](https://docs.google.com/document/d/1oTOpdeGt9of9KVDgSuzqzn8LXCw-t9AsAjsJnQTTIwQ/edit?usp=sharinghttps://docs.google.com/document/d/1oTOpdeGt9of9KVDgSuzqzn8LXCw-t9AsAjsJnQTTIwQ/edit?usp=sharing) prerequisites and the [Design Specifications](https://www.figma.com/design/oyLAeVhRkzPgoza0W0ZOj5/Mobile-Screen---ProjectMark?node-id=0-70&t=0ThlBG8ikmSenLIR-0) on Figma.**</br>
+**[Design Specifications](https://www.figma.com/design/oyLAeVhRkzPgoza0W0ZOj5/Mobile-Screen---ProjectMark?node-id=0-70&t=0ThlBG8ikmSenLIR-0) on Figma.**</br>
 
 <img src="https://github.com/user-attachments/assets/40fcdfa7-777e-4a7d-80b6-6bd778b6ced9" width="20%"></img> 
 
