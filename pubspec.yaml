@@ -1,0 +1,49 @@
+name: open_weather
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cached_network_image: ^3.4.1
+  carousel_slider: ^5.0.0
+  flutter_svg: ^2.0.17
+  get: ^4.7.2
+  intl: ^0.20.2
+  shared_preferences: ^2.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  assets:
+    - assets/icons/
+  fonts:
+    - family: Archivo
+      fonts:
+        - asset: assets/fonts/archivo/Archivo-Black.ttf
+        - asset: assets/fonts/archivo/Archivo-BlackItalic.ttf
+        - asset: assets/fonts/archivo/Archivo-Bold.ttf
+        - asset: assets/fonts/archivo/Archivo-BoldItalic.ttf
+        - asset: assets/fonts/archivo/Archivo-ExtraBold.ttf
+        - asset: assets/fonts/archivo/Archivo-ExtraBoldItalic.ttf
+        - asset: assets/fonts/archivo/Archivo-Light.ttf
+        - asset: assets/fonts/archivo/Archivo-LightItalic.ttf
+        - asset: assets/fonts/archivo/Archivo-ExtraLightItalic.ttf
+        - asset: assets/fonts/archivo/Archivo-Italic.ttf
+        - asset: assets/fonts/archivo/Archivo-Light.ttf
+        - asset: assets/fonts/archivo/Archivo-LightItalic.ttf
+        - asset: assets/fonts/archivo/Archivo-LightItalic.ttf
+        - asset: assets/fonts/archivo/Archivo-Regular.ttf
+        - asset: assets/fonts/archivo/Archivo-SemiBold.ttf
+        - asset: assets/fonts/archivo/Archivo-SemiBoldItalic.ttf
+        - asset: assets/fonts/archivo/Archivo-Thin.ttf
+        - asset: assets/fonts/archivo/Archivo-ThinItalic.ttf
